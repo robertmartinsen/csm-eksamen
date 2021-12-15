@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 body{
     font-family: 'Open Sans', sans-serif;
+    background: rgb(255, 255, 255);
 }
 
 *{
@@ -11,9 +12,18 @@ body{
     text-decoration: none;
 }
 
-nav{
+.nav-container{
+    width: 100%;
     height: 100px;
-    background: rgb(142, 139, 139);
+    background: rgb(255, 255, 255);
+    display: block;
+}
+.inner-nav{
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    background: rgb(255, 252, 252);
 }
 
 nav img{
@@ -72,34 +82,185 @@ label #cancel{
     display: none;
 }
 
-@media (max-width: 1118px){
-    nav img{
-        left: 8%
-    }
+.wrapper{
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-@media (max-width: 944px){
-    nav img{
-        left: 6%;
-        top: 20px;
-        width: 130px;
-    }
-    nav ul li a{
-        font-size: 17px;
-    }
+.img-pic1{
+    width: 100%;
+    height: auto;
+    display: block;
+    padding-top: 0%;
+    background: url(images/PIC1.png);
+    background-size: contain;
 }
-@media (max-width: 860px){
+main{
+    display: block;
+}
+.section-1{
+    background: rgb(255, 255, 255);
+}
+.article1-container{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    box-sizing: border-box;
+
+}
+.first-post{
+    background: #DBDBDB;
+    padding: 40px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 35px;
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 2em;
+    margin-bottom: 25px;
+}
+
+.img-pic2{
+    width: 100%;
+    height: auto;
+    display: block;
+    padding-top: 0%;
+    background: url(images/PIC1.png);
+    background-size: contain;
+
+}
+
+.btn-1{
+    letter-spacing: 2px;
+    background-color: #568FC3;
+    margin-top: 25px;
+    width: 250px;
+    height: 75px;
+    color: white;
+    border-radius: 4px;
+    font-size: 20px;
+    box-shadow: #041140;
+    transition: ease-out 0.3s;
+    outline: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.btn-1:hover{
+    box-shadow: inset 300px 0 0 0 #041140;
+}
+
+.img-pic3{
+    width: 100%;
+    padding-top: 25px;
+}
+.second-post{
+    background: #DBDBDB;
+    padding: 40px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 35px;
+}
+.article2-container{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 24px
+}
+h2{
+    font-size: 24px;
+    font-weight: bolder;
+}
+h3{
+    font-size: 24px;
+    font-weight: bolder;
+}
+.btn-2{
+    letter-spacing: 2px;
+    background-color: #568FC3;
+    margin-top: 25px;
+    width: 250px;
+    height: 75px;
+    color: white;
+    border-radius: 4px;
+    font-size: 20px;
+    box-shadow: #041140;
+    transition: ease-out 0.3s;
+    outline: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.btn-2:hover{
+    box-shadow: inset 300px 0 0 0 #041140;
+}
+
+footer{
+    display: block;
+}
+
+.footer-container{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+.scrollbtn{
+    margin-top: 40px;
+    width: 25px;
+    height: 75px;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    font-size: 40px;
+    outline: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@media (max-width: 1500px){
     label #btn{
         display:block;
+    }
+    nav{
+        position: relative;
+        z-index: 999;
+    }
+    .nav-container{
+        width: 100%;
+        height: 100px;
+        background: rgb(255, 255, 255);
+        display: block;
+    }
+    .inner-nav{
+        width: 700px;
+        height: 100%;
+        display: block;
+        margin: 0 auto;
     }
     ul{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #34495e;
+        background: #AAB1C6;
         top: 100px;
-        left: 0;
+        left: -100%;
         text-align: center;
+        transition: all .5s;
     }
     nav ul li{
         display: block;
@@ -112,6 +273,15 @@ label #cancel{
         width: 130px;
     }
     nav ul li a{
-        font-size: px;
+        font-size: 17px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    #check:checked ~label #btn{
+        display: none;
+    }
+    #check:checked ~label #cancel{
+        display: block;
     }
 }
