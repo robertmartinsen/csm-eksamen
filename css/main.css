@@ -142,7 +142,7 @@ p{
     margin-top: 25px;
     width: 250px;
     height: 75px;
-    color: white;
+    color: rgb(255, 255, 255);
     border-radius: 4px;
     font-size: 20px;
     box-shadow: #041140;
@@ -151,10 +151,12 @@ p{
     margin-left: auto;
     margin-right: auto;
     display: block;
+    text-align: center;
 }
 
 .btn-1:hover{
     box-shadow: inset 300px 0 0 0 #041140;
+    cursor: pointer;
 }
 
 .img-pic3{
@@ -206,6 +208,7 @@ h3{
 }
 .btn-2:hover{
     box-shadow: inset 300px 0 0 0 #041140;
+    cursor: pointer;
 }
 
 footer{
