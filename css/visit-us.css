@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 body{
     font-family: 'Open Sans', sans-serif;
-    background: rgb(255, 255, 255);
+    background: #0c227044;
 }
 
 *{
@@ -175,5 +175,13 @@ h1{
     }
     #check:checked ~label #cancel{
         display: block;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    h1{
+        font-size: 18px;
     }
 }
