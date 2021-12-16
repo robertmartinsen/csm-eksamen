@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 body{
     font-family: 'Open Sans', sans-serif;
-    background: rgb(255, 255, 255);
+    background: #0c227091;
 }
 
 *{
@@ -26,7 +26,7 @@ body{
     background: rgb(255, 252, 252);
 }
 
-nav img{
+.logo{
     position: absolute;
     top: 17px;
     left: 12%;
@@ -87,7 +87,7 @@ label #cancel{
     margin: 0 auto;
 }
 
-.img-pic1{
+.header-img{
     width: 100%;
     height: auto;
     display: block;
@@ -95,13 +95,8 @@ label #cancel{
     background: url(images/PIC1.png);
     background-size: contain;
 }
-main{
-    display: block;
-}
-.section-1{
-    background: rgb(255, 255, 255);
-}
-.article1-container{
+
+.article-container{
     width: 80%;
     margin-right: auto;
     margin-left: auto;
@@ -111,7 +106,7 @@ main{
     box-sizing: border-box;
 
 }
-.first-post{
+.post{
     background: #DBDBDB;
     padding: 40px;
     margin-bottom: 30px;
@@ -126,7 +121,7 @@ p{
     margin-bottom: 25px;
 }
 
-.img-pic2{
+.img-1{
     width: 100%;
     height: auto;
     display: block;
@@ -159,36 +154,13 @@ p{
     cursor: pointer;
 }
 
-.img-pic3{
+.img-2{
     width: 100%;
     padding-top: 25px;
 }
-.second-post{
-    background: #DBDBDB;
-    padding: 40px;
-    margin-bottom: 30px;
-    font-size: 20px;
-    line-height: 35px;
-}
-.article2-container{
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 5px;
-    padding-right: 5px;
-    display: block;
-    box-sizing: border-box;
-}
+
 h1{
     font-size: 24px
-}
-h2{
-    font-size: 24px;
-    font-weight: bolder;
-}
-h3{
-    font-size: 24px;
-    font-weight: bolder;
 }
 .btn-2{
     letter-spacing: 2px;
@@ -270,7 +242,7 @@ footer{
         margin: 50px;
         line-height: 30px;
     }
-    nav img{
+    .logo{
         left: 6%;
         top: 20px;
         width: 130px;
