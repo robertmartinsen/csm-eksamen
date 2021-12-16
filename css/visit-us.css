@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(255, 255, 255);
+}
+
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-container{
+    width: 100%;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    display: block;
+}
+.inner-nav{
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    background: rgb(255, 252, 252);
+}
+
+.logo{
+    position: absolute;
+    top: 17px;
+    left: 12%;
+}
+nav ul{
+    float: right;
+    margin-right: 25px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 100px;
+    margin: 0px 15px;
+}
+
+nav ul li a{
+    position: relative;
+    color: black;
+    font-size: 18px;
+    padding: 5px 0;
+    text-transform: uppercase;
+}
+
+nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height:3px;
+    width: 100%;
+    background:black;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+
+nav ul li a:hover:before{
+transform: scaleX(1);
+transform-origin: left;
+}
+
+label #btn,
+label #cancel{
+    font-size: 30px;
+    float:right;
+    line-height: 100px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.wrapper{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.header-img{
+    width: 100%;
+    height: auto;
+    display: block;
+    padding-top: 0%;
+    background: url(images/PIC1.png);
+    background-size: contain;
+}
+
+.article-container{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    box-sizing: border-box;
+
+}
+.post{
+    background: #DBDBDB;
+    padding: 40px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 35px;
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 2em;
+    margin-bottom: 25px;
+}
+
+h1{
+    font-size: 24px;
+}
+@media (max-width: 1500px){
+    label #btn{
+        display:block;
+    }
+    nav{
+        position: relative;
+        z-index: 999;
+    }
+    .nav-container{
+        width: 100%;
+        height: 100px;
+        background: rgb(255, 255, 255);
+        display: block;
+    }
+    .inner-nav{
+        width: 700px;
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #AAB1C6;
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+    nav img{
+        left: 6%;
+        top: 20px;
+        width: 130px;
+    }
+    nav ul li a{
+        font-size: 17px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    #check:checked ~label #btn{
+        display: none;
+    }
+    #check:checked ~label #cancel{
+        display: block;
+    }
+}
