@@ -26,7 +26,7 @@ body{
     background: rgb(255, 252, 252);
 }
 
-nav img{
+.logo{
     position: absolute;
     top: 17px;
     left: 12%;
@@ -82,15 +82,11 @@ label #cancel{
     display: none;
 }
 
-.img-pic4{
+.header-img{
     width: 100%;
 }
 
-main{
-    display: block;
-}
-
-.article1-container{
+.article-container{
     width: 80%;
     margin-right: auto;
     margin-left: auto;
@@ -101,20 +97,16 @@ main{
     
 }
 
-.article-pic{
-    float: left;
-    padding: 10px;
-    width: 50%;
-}
 
 
-.first-post{
+.post{
     background: #DBDBDB;
     padding: 60px;
     margin-bottom: 30px;
     font-size: 20px;
     line-height: 35px;
     width: 100%;
+
 }
 p{
     font-size: 20px;
@@ -123,6 +115,11 @@ p{
     line-height: 2em;
     margin-bottom: 25px;
 }
+
+h1{
+    font-size: 24px;
+}
+
 
 @media (max-width: 1500px){
     label #btn{
