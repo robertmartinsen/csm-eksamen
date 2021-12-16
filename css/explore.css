@@ -136,7 +136,7 @@ h1{
         display: block;
     }
     .inner-nav{
-        width: 700px;
+        width: 350px;
         height: 100%;
         display: block;
         margin: 0 auto;
@@ -183,7 +183,7 @@ h1{
     }
 }
 
-@media (max-width: 860px){
+@media (max-width: 350px){
     label #btn{
         display:block;
     }
